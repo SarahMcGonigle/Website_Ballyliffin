@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    <meta charset="UTF-8">
+
+    <title>Gallery</title>
+	 <link href="StyleSheet.css" rel="stylesheet">
+	
+	<!-- Bootstrap Stylesheet -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+	<!-- Bootstrap JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	</head>
+
+    <body>
+	
+	<img src="images/logo-banner.png" width="100%">
+	
+	<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="Booking.html">Book A Room</a></li>
+		<li><a href="Food.html">Food & Drink</a></li>
+		<li><a href="Weddings.html">Weddings</a></li>
+		<li><a class="active" href="Gallery.html">Gallery</a></li>
+		<li><a href="Attractions.html">Local Attractions</a></li>
+	</ul>
+	
+	<div class="container">
+		<!-- Grid row -->
+	<div class="row">
+
+	  <!-- Grid column -->
+	  <div class="col-md-12 d-flex justify-content-center mb-5">
+	
+		<h2 style="color:#FFBC41;">Photo Gallery</h2>
+	  </div>
+	  <!-- Grid column -->
+	</div>
+	<!-- Grid row -->
+
+	<!-- Grid row -->
+	<div class="gallery" id="gallery">
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 2">
+		<img class="img-fluid" src="images/ballyliffin-sign.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 1">
+		<img class="img-fluid" src="images/beach1.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 1">
+		<img class="img-fluid" src="images/wedding1.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 2">
+		<img class="img-fluid" src="images/beach-wedding.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 2">
+		<img class="img-fluid" src="images/wedding-tree.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 1">
+		<img class="img-fluid" src="images/glashedy-waves.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+	  
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 2">
+		<img class="img-fluid" src="images/steak.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 1">
+		<img class="img-fluid" src="images/president.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 1">
+		<img class="img-fluid" src="images/top-table.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 2">
+		<img class="img-fluid" src="images/bar_tables.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 2">
+		<img class="img-fluid" src="images/sea.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 1">
+		<img class="img-fluid" src="images/castle.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+	  
+	  <!-- Grid column -->
+	  <div class="mb-3 pics animation all 1">
+		<img class="img-fluid" src="images/soup.jpg" alt="Card image cap">
+	  </div>
+	  <!-- Grid column -->
+	  
+	</div>
+	<!-- Grid row -->
+	
+	<br>
+	</div> <!-- close container-->
+	
+	<div class="footer">
+	<hr>
+		<h5 style="color:#FFBC41;">Contact Us<h5>
+			<p>Ballyliffin Hotel</p>
+			<p>Ballyliffin</p>
+			<p>Inishowen</p>
+			<p>Co.Donegal</p>
+			<p>Ireland</p>
+			<p><b>Email:</b> info@ballyliffinhotel.com</p>
+			<p><b>Phone:</b> 074 93 76106</p>
+	</div>
+	
+	</body>
+<script>
+	$(function() {
+	var selectedClass = "";
+	$(".filter").click(function(){
+	selectedClass = $(this).attr("data-rel");
+	$("#gallery").fadeTo(100, 0.1);
+	$("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+	setTimeout(function() {
+	$("."+selectedClass).fadeIn().addClass('animation');
+	$("#gallery").fadeTo(300, 1);
+	}, 300);
+	});
+	});
+</script>
+</html>

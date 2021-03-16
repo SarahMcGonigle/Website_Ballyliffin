@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    <meta charset="UTF-8">
+
+    <title>Food & Drink</title>
+	 <link href="StyleSheet.css" rel="stylesheet">
+	
+	<!-- Bootstrap Stylesheet -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+	<!-- Bootstrap JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	</head>
+
+    <body>
+	
+	<img src="images/logo-banner.png" width="100%">
+	<div id="foodPage">
+	<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="Booking.html">Book A Room</a></li>
+		<li><a class="active" href="Food.html">Food & Drink</a></li>
+		<li><a href="Weddings.html">Weddings</a></li>
+		<li><a href="Gallery.html">Gallery</a></li>
+		<li><a href="Attractions.html">Local Attractions</a></li>
+	</ul>
+	
+	
+	<div id="side-nav-styles" style="background-color:grey;">
+	
+	<div id="mySidenav" class="sidenav" style="background-color:grey;font-size:20px">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="images/Barfood.pdf">Bar Food Menu</a>
+	  <a href="images/SundayLunch.pdf">Sunday Lunch</a>
+	  <a href="images/Dessert.pdf">Dessert</a>
+	</div>
+	
+	<br>
+	<h4 style="color:#FFBC41;">View our Menus</h4>
+	<p>Click the link on the left to view our different menus</p>
+	<span style="color:#FFBC41;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menus</span>
+
+	</div>
+
+	<div class="parallax"></div>
+	
+	<div style="height:200px;background-color:grey;font-size:20px">
+	<br>
+	<h4 style="color:#FFBC41;">The Rachtan Bar</h4>
+	<p>
+		A superb Bar Food Menu is available daily with a wide selection of the finest local fresh seafood, meats and seasonal produce, prepared to order and served by our friendly and efficient staff. The cosy traditional bar surroundings and comfortable lounges are the perfect backdrop in the evening time for lively entertainment and banter.
+	</p>
+	</div>
+	
+	<div class="parallax2"></div>
+
+	<div style="height:250px;background-color:grey;font-size:20px">
+	<br>
+	<h4 style="color:#FFBC41;">The Cruckaughrim Restaurant</h4>
+	<p>
+		For more formal dining and special celebrations, The Cruckaughrim Restaurant offers guests excellent service, wonderful food and great atmosphere.
+	</p>
+	<p>
+		Choose from sumptuous A la Carte and Table d’hôte menus carefully selected to bring you the very best of local fresh produce. Famous for Chargrilled Steaks and melt-in-the-mouth Baked Salmon, there’s something for everyone including a tempting selection of home-made desserts, liqueur coffees and house wines.
+	</p>
+	</div>
+		
+	<div class="parallax3"></div>
+
+	</div>
+	
+	<div class="footer">
+	<hr>
+		<h5 style="color:#FFBC41;">Contact Us<h5>
+			<p>Ballyliffin Hotel</p>
+			<p>Ballyliffin</p>
+			<p>Inishowen</p>
+			<p>Co.Donegal</p>
+			<p>Ireland</p>
+			<p><b>Email:</b> info@ballyliffinhotel.com</p>
+			<p><b>Phone:</b> 074 93 76106</p>
+	</div>
+	</body>
+	<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
+</html>

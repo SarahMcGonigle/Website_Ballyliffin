@@ -1,0 +1,391 @@
+/* Nav bar Styling*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #373737;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.map{
+	margin-left: 27%;
+}
+
+li a:hover:not(.active) {
+  background-color: #BFBFBF;
+  color: white;
+}
+
+.active {
+  background-color: #7B52AB;
+}
+
+.container{
+	background-color: grey;/*#BFBFBF;*/
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("images/beach_golf.jpg");
+
+  
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr{
+	border: 2px solid;
+	color: white;
+}
+
+.intro{
+	text-align: center;
+	background-color: grey;
+	height: 300px;
+}
+
+.intro p{
+	font-family:'Oswald',sans-serif; 
+	font-weight:400;
+    text-align: center; 
+	color:white; 
+	padding:0;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size:18px; 
+	letter-spacing:3px;
+}
+/* Food page + parralex */
+.parallax {
+  /* The image used */
+  background-image: url("images/fish.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("images/steak.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("images/bar_tables.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2, h4, h3, h5 {
+  font-family:'Oswald',sans-serif; 
+  font-weight:400;
+  text-align: center;
+  color:black; 
+  padding:0;
+  margin:0;
+  font-size:35px; 
+  letter-spacing:8px;
+}
+
+#foodPage p{
+  font-family:'Oswald',sans-serif; 
+  font-weight:400;
+  text-align: center; 
+  color:white; 
+  padding:0;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size:18px; 
+  letter-spacing:3px;
+}
+
+/*Home page styles */
+
+.row{
+	padding: 4%;
+	margin-left: 20%;
+}
+.row h5, p{
+	text-align:center;
+}
+
+.card{
+	background-color: #7B52AB;
+	margin-right: 2%;
+}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:250px;
+   background-color: grey;
+   color: white;
+   text-align: center;
+}
+.footer p{
+	font-family:'Oswald',sans-serif; 
+	text-align: center; 
+	color:white; 
+	padding:0;
+	font-size:12px; 
+	letter-spacing:0;
+} 
+
+.footer hr{
+	width: 100%;
+	border: 3px solid;
+	color:#FFBC41;
+}
+
+/* Booking Form */
+.bookingPage{
+	background-color:white;
+}
+
+.bookingPage p, h2{
+  font-family:'Oswald',sans-serif; 
+  font-weight:400;
+  text-align: center; 
+  color:white; 
+  padding:0;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size:18px; 
+  letter-spacing:3px;
+}
+
+.form-group{
+	width: 50%;
+	margin-left: 25%;
+}
+
+form button{
+	 float: center;
+	 margin-left: 45%;
+	 border: none;
+ }
+ 
+form{
+	 background-color: #7B52AB;
+ }
+
+form hr{
+	width: 40%;
+	border: 1px solid;
+	color:#FFBC41;
+}
+
+/*Food page side nav*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:#FFBC41;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 0px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Gallery Page*/
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+
+/* Attractions Page */
+.attractions{
+	text-align: center;
+	background-color: grey;
+	height: 200px;
+}
+
+.attractions p{
+	font-family:'Oswald',sans-serif; 
+	font-weight:400;
+    text-align: center; 
+	color:white; 
+	padding:0;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size:18px; 
+	letter-spacing:3px;
+}
+
+/* Weddings Page */
+.weddings{
+	text-align: center;
+	background-color: grey;
+	height: 300px;
+}
+
+.weddings p{
+	font-family:'Oswald',sans-serif; 
+	font-weight:400;
+    text-align: center; 
+	color:white; 
+	padding:0;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size:18px; 
+	letter-spacing:3px;
+}
+
+.sidenav1 {
+  width: 250px;
+  position: relative;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background-color: gray;
+  overflow-x:hidden;
+  padding: 8px 0;
+}
+
+.sidenav1 a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFBC41;
+  display: block;
+  border-bottom: 1px solid #FFBC41;
+}
+.sidenav1 a:last-child {
+	border-bottom: none;
+}
+
+.sidenav1 a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Terms & Conditions*/
+.terms{
+  float: right;
+  background-color: white;
+  margin-left: 20%;
+  border: 2px solid #7B52AB;
+  width: 70%;
+}
+
+.terms ul{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.terms li{
+  float: left;
+  display: block;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
